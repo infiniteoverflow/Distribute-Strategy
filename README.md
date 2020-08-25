@@ -1,5 +1,7 @@
 # Distribute-Strategy   
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" height=100 width=100/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" height=150 width=150/>
+</p>
 
 One very useful addition to TensorFlow 2.x is the possibility to train models using distributed GPUs, multiple machines, and TPUs in a very simple way with very few additional lines of code. `tf.distribute.Strategy` is the TensorFlow API used in this case and it supports both `tf.keras` and `tf.estimator` APIs and eager execution. You can switch between GPUs, TPUs, and multiple machines by just changing the strategy instance. Strategies can be synchronous, where all workers train over different slices of input data in a form of sync data parallel computation, or asynchronous, where updates from the optimizers are not happening in sync. All that strategies require is that the data should be loaded in batches using the `tf.data.Dataset` API.
 
